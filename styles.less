@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.header{
+    background: linear-gradient(to right,#790bed,#d246a1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    .poisc{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .header_text{
+            width: 250px;
+            height: 25px;
+            border-radius: 5px;
+            border: 2px;
+            background-position: center;
+            padding: 7px;
+        }
+        .header_button{
+            width: 50px;
+            height: 50px;
+            background-position: center;
+        }
+    }
+} 
+.reclama{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}  
+.reclama-img{
+    border-radius: 15px;
+    height: 150px;
+    width: 85%;
+}
+.cards-inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: 5px;
+    gap: 15px;
+}
+.card{          
+    width: 200px;
+    max-height: 300px;
+    border: 2px;
+    border-radius: 15px;
+    border-color: black;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    .card-img{
+        width: 200px;
+
+    }
+    .card-img[src='']::before{
+        display: flex;
+        width: 200px;
+        background-color: lightgray;
+        height: 200px;
+        justify-content: center;
+        align-items: center;
+        content: "No image";
+        border-radius: 15px;
+    }
+    .card-like{
+        display: flex;
+        justify-content: flex-end;
+        width:  15px;
+        height: 15px;
+        border: 0;
+        border-radius: 15px;
+        background-color: white;
+    }
+    .card-like:active{
+        color: red;
+    }
+}

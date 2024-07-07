@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shedevr</title>
+    <link rel="stylesheet/less" type="text/css" href="styles.less" />
+    <script src="https://cdn.jsdelivr.net/npm/less"></script>
+</head>
+<body>  
+    <div class="header">
+        <div class="poisc">
+            <input type="text" class="header_text" placeholder="Поиск товаров">
+            <img src="1.png" class="header_button">
+            <select id="country" name="country">
+                <option value="Ru">Ru</option>
+                <option value="En">En</option>
+                <option value="Kz">Kz</option>
+              </select>
+        </div>
+    </div>
+    <div class="main">
+        <div class="reclama">
+            <img src="https://static-basket-01.wbbasket.ru/vol1/crm-bnrs/bners1/Banner_web-2880.webp" name="banner_e35123c0-1c10-48e7-92a1-685eb1c77102" class="reclama-img">
+        </div>
+        <div class="cards-inner"></div>
+        <template class="card-template">
+        <div class="card">
+            <img src="" class="card-img">
+            <h2 class="card-name">Название товара</h2>
+            <p class="card-price">Цена</p>
+            <p class="card-opisanie">описание</p>
+            <button class="card-like">♥</button>
+        </div>
+        </template>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
