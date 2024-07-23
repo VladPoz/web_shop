@@ -3,38 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shedevr</title>
-    <link rel="stylesheet/less" type="text/css" href="styles.less" />
-    <script src="https://cdn.jsdelivr.net/npm/less"></script>
+    <title>Quizzes</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>  
-    <div class="header">
-        <div class="poisc">
-            <input type="text" class="header_text" placeholder="Поиск товаров">
-            <img src="1.png" class="header_button">
-            <select id="country" name="country">
-                <option value="Ru">Ru</option>
-                <option value="En">En</option>
-                <option value="Kz">Kz</option>
-              </select>
-        </div>
+<body>
+    <div class="start">
+        <div class="hello">Приветствуем на викторине, нажмите на кнопку старт!</div>
+        <div class="hz"><div class="btn">Start</div></div>
     </div>
     <div class="main">
-        <div class="reclama">
-            <img src="https://static-basket-01.wbbasket.ru/vol1/crm-bnrs/bners1/Banner_web-2880.webp" name="banner_e35123c0-1c10-48e7-92a1-685eb1c77102" class="reclama-img">
+        <div class="question"><div class="text"></div></div>
+        <div class="answer">
+            <ul>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+            </ul>
         </div>
-        <div class="cards-inner"></div>
-        <template class="card-template">
-        <div class="card">
-            <img src="" class="card-img">
-            <h2 class="card-name">Название товара</h2>
-            <p class="card-price">Цена</p>
-            <p class="card-opisanie">описание</p>
-            <button class="card-like">♥</button>
-        </div>
-        </template>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    <script src="main.js"></script>
+    <div class="end">
+        <div>Правильных ответов: <span class="yes">0</span></div>
+        <div>Неправильных ответов: <span class="no">0</span></div>
+    </div>
 </body>
+<script src="script.js"></script>
 </html>
